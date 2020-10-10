@@ -9,10 +9,10 @@ Time spent: 0.5 hours spent in total
 The following **required** functionality is completed:
 
 - [x] User can **sign in to Twitter** using OAuth login
-- [ ]	User can **view tweets from their home timeline**
-  - [ ] User is displayed the username, name, and body for each tweet
-  - [ ] User is displayed the [relative timestamp](https://gist.github.com/nesquena/f786232f5ef72f6e10a7) for each tweet "8m", "7h"
-- [ ] User can refresh tweets timeline by pulling down to refresh
+- [x]	User can **view tweets from their home timeline**
+  - [x] User is displayed the username, name, and body for each tweet
+  - [x] User is displayed the [relative timestamp](https://gist.github.com/nesquena/f786232f5ef72f6e10a7) for each tweet "8m", "7h"
+- [x] User can refresh tweets timeline by pulling down to refresh
 
 The following **optional** features are implemented:
 
@@ -28,21 +28,17 @@ The following **optional** features are implemented:
 - [ ] User can view following / followers list through any profile they view.
 - [ ] User is using **"Twitter branded" colors and styles**
 
-The following **additional** features are implemented:
-
-- [ ] List anything else that you can get done to improve the app functionality!
-
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='./twitter1.gif' width='250'/>
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+No difficulties as of right now (after finishing required stories).
 
 ## Open-source libraries used
 
