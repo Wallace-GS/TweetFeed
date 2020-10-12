@@ -52,7 +52,9 @@ public class ComposeActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                String charCount = count + "/280";
+                String charCount = s.length() + "/280";
+
+                tvCharCount.setText(charCount);
 
                 if (count > MAX_TWEET_LENGTH) {
                     tvCharCount.setTextColor(Color.RED);
@@ -61,8 +63,6 @@ public class ComposeActivity extends AppCompatActivity {
                     tvCharCount.setTextColor(Color.BLACK);
                     btnTweet.setEnabled(true);
                 }
-
-                tvCharCount.setText(charCount);
             }
 
             @Override
