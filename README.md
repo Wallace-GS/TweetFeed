@@ -4,8 +4,6 @@ Twitter Clone is an android app that allows a user to view his Twitter timeline.
 
 ## Twitter Clone Part 2
 
-Time spent: 2.5 hours spent in total
-
 ### User Stories
 
 The following **required** functionality is completed:
@@ -47,8 +45,6 @@ No challenges so far (after completing required user stories).
 
 
 ## Twitter Clone Part 1
-
-Time spent: 1.5 hour spent in total
 
 ### User Stories
 
