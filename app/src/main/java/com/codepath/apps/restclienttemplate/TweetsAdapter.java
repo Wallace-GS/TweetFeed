@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.bitmap.CircleCrop;
 import com.codepath.apps.restclienttemplate.models.Tweet;
 
 import java.util.List;
@@ -43,36 +44,48 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
         return tweets.size();
     }
 
+    // Clean all elements of the recycler
     public void clear() {
         tweets.clear();
         notifyDataSetChanged();
     }
 
-    public void addAll(List<Tweet> tweetList) {
-        tweets.addAll(tweetList);
+    // Add a list of items -- change to type used
+    public void addAll(List<Tweet> list) {
+        tweets.addAll(list);
         notifyDataSetChanged();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         ImageView ivProfileImage;
-        TextView tvBody;
+        TextView tvName;
         TextView tvScreenName;
         TextView tvTime;
+        TextView tvBody;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             ivProfileImage = itemView.findViewById(R.id.ivProfileImage);
-            tvBody = itemView.findViewById(R.id.tvBody);
+            tvName = itemView.findViewById(R.id.tvName);
             tvScreenName = itemView.findViewById(R.id.tvScreenName);
             tvTime = itemView.findViewById(R.id.tvTime);
+            tvBody = itemView.findViewById(R.id.tvBody);
         }
 
         public void bind(Tweet tweet) {
+            String screenname = "@" + tweet.user.screenName;
+            String name = "";
+            if (tweet.user.name.length() >= 20) {
+                name = tweet.user.name.substring(0, 20) + "...";
+            } else {
+                name = tweet.user.name;
+            }
+            tvName.setText(name);
+            tvScreenName.setText(screenname);
+            tvTime.setText(TimeFormatter.getTimeDifference(tweet.createdAt));
             tvBody.setText(tweet.body);
-            tvScreenName.setText(tweet.user.screenName);
-            tvTime.setText(tweet.createdAt);
-            Glide.with(context).load(tweet.user.publicImageUrl).into(ivProfileImage);
+            Glide.with(context).load(tweet.user.profileImageUrl).transform(new CircleCrop()).into(ivProfileImage);
         }
     }
 }

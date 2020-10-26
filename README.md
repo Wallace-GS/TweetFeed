@@ -1,8 +1,8 @@
-# Project 2 - Twitter Clone
+# Project 2 - TweetFeed
 
 Twitter Clone is an android app that allows a user to view his Twitter timeline. The app utilizes [Twitter REST API](https://dev.twitter.com/rest/public).
 
-## Twitter Clone Part 2
+## TweetFeed Part 2
 
 ### User Stories
 
@@ -44,7 +44,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 No challenges so far (after completing required user stories).
 
 
-## Twitter Clone Part 1
+## TweetFeed Part 1
 
 ### User Stories
 

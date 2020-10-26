@@ -9,16 +9,15 @@ public class User {
 
     public String name;
     public String screenName;
-    public String publicImageUrl;
+    public String profileImageUrl;
 
-    // empty constructor needed by parceler lib
     public User() {}
 
     public static User fromJson(JSONObject jsonObject) throws JSONException {
         User user = new User();
         user.name = jsonObject.getString("name");
         user.screenName = jsonObject.getString("screen_name");
-        user.publicImageUrl = jsonObject.getString("profile_image_url_https");
+        user.profileImageUrl = jsonObject.getString("profile_image_url_https");
         return user;
     }
 }
