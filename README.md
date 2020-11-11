@@ -4,6 +4,8 @@ TweetFeed is an android app that allows a user to view his Twitter timeline. The
 
 ## TweetFeed Part 2
 
+<img src='./twitter.gif' width='250'/>
+
 ### User Stories
 
 - [x] User can **compose and post a new tweet**
@@ -14,12 +16,6 @@ TweetFeed is an android app that allows a user to view his Twitter timeline. The
   - [x] User can **see a counter with total number of characters left for tweet** on compose tweet page
 - [x] User is using **"Twitter branded" colors and styles**
 - [x] Use Parcelable instead of Serializable using the popular [Parceler library](http://guides.codepath.org/android/Using-Parceler).
-
-### Video Walkthrough
-
-Here's a walkthrough of implemented user stories:
-
-<img src='./twitter.gif' width='250'/>
 
 ## TweetFeed Part 1
 
